@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        .container{
+            background-color: bisque;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+
+            background-color: aquamarine;
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            /* box-shadow: 7px 15px red; */
+            /* box-shadow: 7px -15px red;             */
+            /* box-shadow: 7px 15px 50px red; */
+            box-shadow: 7px 15px 50px 30px rgb(208, 20, 20);
+        }
+        #head{
+            /* text-shadow: 12px 13px 12px rgb(171, 35, 35); */
+            /* text-shadow: yellow 12px 13px 2px; */
+            /* text-shadow: white 12px 13px; */
+            text-shadow: 13px 12px;
+        }
+
+    </style>
+<body>
+  
+    <div class="container">
+
+        <div class="box">
+            <img src="data:image/png;base64,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" alt="codehelp" width="200px" >
+            <h1 id="head">Welcome to codehelp</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus a laudantium, nam velit accusantium animi placeat aliquid ex quasi recusandae illo aspernatur natus iusto. Quo iste voluptatibus nisi at architecto.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
